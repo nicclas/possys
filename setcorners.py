@@ -3,7 +3,7 @@ import numpy as np
 import urllib2
 import urllib
 import math
-import colorconfig
+import colorconfigcorners
 
 # Sort the coordinates in CCW order, starting with SW
 def sortcoords(x, y):
@@ -36,12 +36,12 @@ maskName = "Mask"
 cv2.namedWindow(sliderName, cv2.CV_WINDOW_AUTOSIZE)
 #cv2.namedWindow(sliderName)
 
-cv2.createTrackbar('Corner H',sliderName,colorconfig.corner_h,255,nothing)
-cv2.createTrackbar('Corner S',sliderName,colorconfig.corner_s,255,nothing)
-cv2.createTrackbar('Corner V',sliderName,colorconfig.corner_v,255,nothing)
-cv2.createTrackbar('Corner H2',sliderName,colorconfig.corner_h2,255,nothing)
-cv2.createTrackbar('Corner S2',sliderName,colorconfig.corner_s2,255,nothing)
-cv2.createTrackbar('Corner V2',sliderName,colorconfig.corner_v2,255,nothing)
+cv2.createTrackbar('Corner H',sliderName,colorconfigcorners.corner_h,255,nothing)
+cv2.createTrackbar('Corner S',sliderName,colorconfigcorners.corner_s,255,nothing)
+cv2.createTrackbar('Corner V',sliderName,colorconfigcorners.corner_v,255,nothing)
+cv2.createTrackbar('Corner H2',sliderName,colorconfigcorners.corner_h2,255,nothing)
+cv2.createTrackbar('Corner S2',sliderName,colorconfigcorners.corner_s2,255,nothing)
+cv2.createTrackbar('Corner V2',sliderName,colorconfigcorners.corner_v2,255,nothing)
 
 #cv2.resizeWindow("Thresholds",400,200)
 
